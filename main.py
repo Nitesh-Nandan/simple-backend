@@ -74,7 +74,7 @@ def save_contacts(contacts):
 
 @app.get("/hello")
 async def hello():
-    return {"message": "hello from niteh"}
+    return {"message": "Hello! from Nitesh"}
 
 @app.post("/api/contact", response_model=ContactResponse)
 async def create_contact(contact: ContactRequest, token: str = Depends(validate_token)):
